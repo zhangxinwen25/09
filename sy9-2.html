@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body,ul,li{margin:0;padding:0;}
+body{
+	background-color:#ccc;                                      
+	color:#fff;
+}
+h2{
+	margin:30px 0 30px 50px;
+}
+ul{
+	position:relative;
+	margin:0 0 0 50px;
+}
+li{
+	list-style-type:none;
+	float:left;
+}
+input{
+	position:absolute;
+	display:none;
+}
+label{
+	display:block;
+	width:82px;
+	height:54px;
+	background-color:#6a9e52;
+	font-size:20px;
+	line-height:54px;
+	text-align:center;
+	border-radius:5px 5px 0 0;
+}
+div{
+	position:absolute;
+	top:50px;
+	left:-40px;
+	width:340px;
+	height:175px;
+	padding:25px;
+	background-color:#376b1f;
+}
+p{
+	margin:15px 0;
+	font-size:18px;
+}
+label:hover{
+	background-color:#508438;
+	cursor:pointer;
+}
+input:checked + label{
+	position:relative;
+	top:-4px;
+	padding-top:3px;
+	background-color:#376b1f;
+	text-decoration:underline;
+}
+input:checked~div{
+	z-index:2;
+}	
+</style>
+</head>
+
+<body>
+<h2>纯CSS制作的Tab选项卡</h2>
+<ul>
+	<li>
+    	<input type="radio" name='tab' id='tab1'checked>
+        <label for="tab1">要闻</label>
+        <div>
+        	<p>刑诉法修改：增加缺席审判，配合国家反腐</p>
+            <p>米面换烟酒 是谁动了养老人员的“奶酪”？</p>
+            <p>《人民日报》“时光博物馆”26日在北京开展</p>
+            <p>外交部回应澳媒言论：愿拓展多领域合作</p>
+        </div>
+    </li>
+    <li>
+    	<input type="radio" name='tab' id='tab2'>
+        <label for="tab2">时政</label>
+        <div>
+        	<p>两部门约谈腾讯：清理有害内容微信公号</p>
+            <p>港珠澳大桥通车 世界级旅游区呼之欲出</p>
+            <p>我国海口等六城市获“国际湿地城市”称号</p>
+            <p>北京发企业工资指导线 严控国企工资增幅</p>
+        </div>
+    </li>
+    <li>
+    	<input type="radio" name='tab' id='tab3'>
+        <label for="tab3">文化</label>
+        <div>
+        	<p>《人民日报》：网络文学进入2.0时代</p>
+            <p>丰子恺漫画展在京展出百余原作</p>
+            <p>《人民日报》：流量明星为什么流不动了？</p>
+            <p>“中国剧场”栏目正式亮相印尼国家电视台</p>
+        </div>
+    </li>
+</ul>
+</body>
+</html>
